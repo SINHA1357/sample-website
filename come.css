@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit";
+}
+
+body {
+  background: linear-gradient(#e12525, #171717);
+  min-height: 100vh;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
+  display: flex;
+}
+
+.container {
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu a:hover {
+  color: yellow;
+}
+
+nav img {
+  width: 200px;
+  cursor: pointer;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.img-icon {
+  display: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.container input {
+  width: 100px;
+  font-size: 14px;
+  border-radius: 30px;
+  background: black;
+  border: 2px solid white;
+  padding: 10px 0px 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text {
+  width: 650px;
+  margin: 150px 0px;
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+  padding-top: 15px;
+  max-width: 450px;
+  color: darkgray;
+}
+
+.header-btn {
+  margin-top: 24px;
+  width: 220px;
+  height: 60px;
+  border-radius: 50px;
+  background: #e20000;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.header img {
+  width: 550px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.header h1:hover {
+  color: yellowgreen;
+}
+
+@media screen and (max-width: 600px) {
+
+  nav img {
+    width: 200px;
+    padding-top: 12px;
+  }
+
+  .img-icon {
+    width: 60px;
+    display: block;
+  }
+
+  .open-icon {
+    position: fixed;
+    right: 30px;
+    width: 40px;
+  }
+
+  nav ul {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    gap: 30px;
+    background-color: #8cdb9a;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    font-size: 24px;
+
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  .header-text {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .header-btn {
+    width: 180px;
+    height: 60px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .header img {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  nav .contact-btn {
+    display: none;
+  }
+}
